@@ -62,6 +62,7 @@ Lingify/
 
 ## 6. Installation and Setup
 
+
 ### Prerequisites
 
 - Node.js and npm installed
@@ -69,11 +70,9 @@ Lingify/
 - A code editor such as Visual Studio Code
 
 ### Step 1: Clone the Repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/Lingify.git
+git clone https://github.com/Janani2511/Lingify.git
 cd Lingify
-```
+
 
 Replace `YOUR-USERNAME` with your GitHub username.
 

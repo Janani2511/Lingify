@@ -134,7 +134,7 @@ Contributions, suggestions, and feedback are welcome. Please open an issue to di
 
 ## 12. License
 
-This project will use the license specified in the repository's `LICENSE` file. Until that file is added, the project's licensing terms have not been finalized.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 

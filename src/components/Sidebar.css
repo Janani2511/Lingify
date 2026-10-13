@@ -1,0 +1,76 @@
+.sidebar {
+  width: 150px;
+  padding: 18px 10px;
+  display: flex;
+  flex-direction: column;
+  background: var(--sidebar);
+  border-right: 1px solid var(--border);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4f7cff, #2bb5a0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.logo-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.logo-tagline {
+  font-size: 5px;
+  color: var(--muted);
+}
+
+/* Menu buttons */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: left;
+}
+
+.menu-button:hover {
+  background: var(--card);
+  color: var(--text);
+}
+
+/* The page that is currently open */
+.menu-button.active {
+  background: var(--accent);
+  color: white;
+}
+
+/* Bottom text */
+.sidebar-footer {
+  margin-top: auto; /* pushes it to the bottom */
+  font-size: 10px;
+  font-style: italic;
+  color: var(--muted);
+}

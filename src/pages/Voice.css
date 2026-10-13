@@ -1,0 +1,281 @@
+/* ---------- Header ---------- */
+.voice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.voice-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.voice-heading-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.voice-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.voice-subtitle {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.voice-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------- Mic area ---------- */
+.mic-area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mic-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.mic-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--accent-soft);
+  font-size: 38px;
+  box-shadow: 0 0 0 10px rgba(79, 124, 255, 0.08), 0 0 30px rgba(79, 124, 255, 0.35);
+}
+
+.mic-button:hover {
+  background: rgba(79, 124, 255, 0.3);
+}
+
+/* When the mic is on, the button gently pulses */
+.mic-button.listening {
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
+/* Waveform bars */
+.wave {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 50px;
+}
+
+.bar {
+  width: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0.6;
+}
+
+/* When listening, the bars get brighter */
+.wave.listening .bar {
+  opacity: 1;
+}
+
+.mic-text {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.demo-note {
+  margin: 4px 0 0;
+  font-size: 10px;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+/* ---------- Language selects ---------- */
+.language-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.language-box {
+  width: 220px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+}
+
+.language-label {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.language-select {
+  width: 100%;
+  margin-top: 4px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 13px;
+  outline: none;
+}
+
+/* The dropdown list itself needs its own background color */
+.language-select option {
+  background: var(--card);
+  color: var(--text);
+}
+
+.swap-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--text);
+}
+
+.swap-button:hover {
+  border-color: var(--accent);
+}
+
+/* ---------- Result box ---------- */
+.result-box {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1b2a66, #131a30);
+}
+
+.result-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.result-wave {
+  color: var(--accent-hover);
+}
+
+.result-language {
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--muted);
+}
+
+.result-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.result-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.play-button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-size: 11px;
+}
+
+.play-button:hover {
+  background: var(--accent-hover);
+}
+
+/* ---------- More Voice Features ---------- */
+.more-title {
+  margin: 20px 0 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.more-row {
+  display: flex;
+  gap: 12px;
+}
+
+.more-chip {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 11px;
+}
+/* ---------- New: status message and result layout ---------- */
+.status-message {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: #e0a43a; /* soft amber so it stands out */
+}
+
+/* The second half of the result box (the translation) */
+.result-second {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* Grey text shown before anything is spoken */
+.result-text.placeholder {
+  color: var(--muted);
+}
+
+.result-box > .result-text {
+  margin-top: 8px;
+}
+/* ---------- Result box sections ---------- */
+.result-section {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* The last section has no line under it */
+.result-section:last-child {
+  border-bottom: none;
+}
+
+.result-label {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.result-section .result-text {
+  margin-top: 8px;
+}

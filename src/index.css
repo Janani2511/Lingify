@@ -1,0 +1,37 @@
+/* Global styles: they apply to the whole website */
+
+/* ---------- COLOR LIST ----------
+   Change a color here and it changes everywhere.
+   We use a color anywhere by writing var(--name) */
+:root {
+  --bg: #0b1020;
+  --window-bg: #0d1326;
+  --sidebar: #0e1428;
+  --card: #131a30;
+  --border: #232c4a;
+  --text: #e8ecf8;
+  --muted: #94a0c0;
+  --accent: #4f7cff;
+  --accent-hover: #6b92ff;
+  --accent-soft: rgba(79, 124, 255, 0.15);
+}
+
+* {
+  box-sizing: border-box; /* padding will not make boxes bigger */
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}

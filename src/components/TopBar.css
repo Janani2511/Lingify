@@ -1,0 +1,39 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  width: 130px;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+}
+
+.icon-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--text);
+}
+
+.icon-button:hover {
+  border-color: var(--accent);
+}
+
+/* A round circle with a letter. Replace with a photo later. */
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f7cff, #2bb5a0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
